@@ -1,0 +1,26 @@
+@use "@styles/variables.scss" as *;
+@use "@styles/mixins.scss" as *;
+
+.button {
+  background-color: $color-base-yellow;
+  color: $color-base-dark;
+  border: none;
+  cursor: pointer;
+  width: 300px;
+  height: 60px;
+  padding: 20px 25px;
+  @include text-base;
+  @include flex-center;
+  justify-content: center;
+
+  &:hover {
+    background: linear-gradient(96deg, #ac6115 0%, #9e7a19 100%);
+  }
+
+  &--navigation-card {
+    background-color: $color-base-dark;
+    color: $color-base-yellow;
+    border: 1px solid $color-base-yellow;
+    width: 320px;
+  }
+}

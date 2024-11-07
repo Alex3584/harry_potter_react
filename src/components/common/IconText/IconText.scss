@@ -1,0 +1,14 @@
+.icon-text {
+  display: inline-flex;
+  align-items: center;
+
+  .icon-text__icon--left {
+    margin-right: 8px;
+  }
+
+  .icon-text__icon--right {
+    margin-left: 8px;
+    width: 30px;
+    height: 20px;
+  }
+}

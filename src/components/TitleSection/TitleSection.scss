@@ -1,0 +1,21 @@
+@use "@styles/variables.scss" as *;
+
+.title-section {
+  &--h1 {
+    font-family: "Bluu Next Cyrillic", sans-serif;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 1.25;
+    color: $color-text-yellow;
+    text-transform: uppercase;
+    width: 950px;
+  }
+
+  &--h4 {
+    font-family: "Inter", sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1.4;
+    color: $color-base-light;
+  }
+}

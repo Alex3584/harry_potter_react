@@ -1,0 +1,33 @@
+.main-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  min-height: 85vh;
+
+  &__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85vh;
+    background: url("../../assets/images/image.jpg") center,
+      linear-gradient(
+        180deg,
+        rgb(29, 29, 29) 28.443%,
+        rgba(29, 29, 29, 0) 59.078%
+      );
+    background-size: cover;
+    z-index: -1;
+  }
+
+  &__background-container {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 1200px;
+  }
+}
+
+

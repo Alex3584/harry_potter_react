@@ -1,0 +1,71 @@
+@import "@styles/variables.scss";
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  width: 1250px;
+  height: 60px;
+  box-sizing: border-box;
+  border: 1px solid $color-base-light;
+  border-radius: 100px;
+  margin-bottom: 50px;
+  background-color: $color-base-dark;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 310px;
+  height: 58px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color-base-light;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  position: relative;
+  font-family: "Bluu Next Cyrillic", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.menu-item.active {
+  background-color: $color-base-yellow;
+  color: $color-base-dark;
+}
+
+.menu-item.active::before {
+  opacity: 1;
+}
+
+.menu-item:hover {
+  color: #333;
+}
+
+.menu-item:hover::before {
+  opacity: 1;
+}
+
+.menu-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $color-base-yellow;
+  width: 315px;
+  border-radius: 100px;
+  z-index: -1;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.menu-item img {
+  margin-right: 10px;
+  vertical-align: middle;
+}
